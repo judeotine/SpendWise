@@ -152,7 +152,7 @@ const Settings = () => {
       items: [
         {
           name: "GitHub",
-          description: "View source code on GitHub",
+          description: "Check out my GitHub",
           control: (
             <Button variant="outline" size="sm" asChild className="group glassmorphism hover:bg-white/20 border border-white/20">
               <a href="https://github.com/judeotine" target="_blank" rel="noopener noreferrer">
