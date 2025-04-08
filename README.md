@@ -11,19 +11,19 @@ A **cross-platform personal finance app** built with React, Capacitor, and Fireb
   <table>
     <!-- Row 1 -->
     <tr>
-      <td align="center"><img src="/public/mockups/1.png" width="200"/><br><b>Login Screen</b></td>
-      <td align="center"><img src="/public/mockups/3.png" width="200"/><br><b>Dashboard</b></td>
-      <td align="center"><img src="/public/mockups/4.png" width="200"/><br><b>Expense Tracking</b></td>
+      <td align="center"><img src="/public/mockups/1.png" width="200"/><br><b>Welcome screen</b></td>
+      <td align="center"><img src="/public/mockups/3.png" width="200"/><br><b>Insights</b></td>
+      <td align="center"><img src="/public/mockups/4.png" width="200"/><br><b>Expense</b></td>
     </tr>
     <!-- Row 2 -->
     <tr>
-      <td align="center"><img src="/public/mockups/5.png" width="200"/><br><b>Budget Overview</b></td>
-      <td align="center"><img src="/public/mockups/6.png" width="200"/><br><b>Reports</b></td>
-      <td align="center"><img src="/public/mockups/7.png" width="200"/><br><b>Categories</b></td>
+      <td align="center"><img src="/public/mockups/5.png" width="200"/><br><b>Budget Planner</b></td>
+      <td align="center"><img src="/public/mockups/6.png" width="200"/><br><b>Settings</b></td>
+      <td align="center"><img src="/public/mockups/7.png" width="200"/><br><b>Reciept Scanner</b></td>
     </tr>
     <!-- Row 3 (single centered image) -->
     <tr>
-      <td colspan="3" align="center"><img src="/public/mockups/8.png" width="200"/><br><b>Settings</b></td>
+      <td colspan="3" align="center"><img src="/public/mockups/8.png" width="200"/><br><b>Dashboard</b></td>
     </tr>
   </table>
 </div>
