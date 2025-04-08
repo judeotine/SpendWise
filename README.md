@@ -1,10 +1,32 @@
 ```
 # 💰 SpendWise - Personal Budget Tracker
 
-![SpendWise Screenshot](https://via.placeholder.com/800x400?text=SpendWise+App+Preview)  
-*(Replace with actual screenshot link)*
-
 A **cross-platform personal finance app** built with React, Capacitor, and Firebase to help users track expenses, manage budgets, and visualize spending habits.
+
+## 📱 SpendWise Mockups
+
+### Key Screens Preview
+
+<div align="center">
+  <table>
+    <!-- Row 1 -->
+    <tr>
+      <td align="center"><img src="/public/mockups/1.png" width="200"/><br><b>Login Screen</b></td>
+      <td align="center"><img src="/public/mockups/3.png" width="200"/><br><b>Dashboard</b></td>
+      <td align="center"><img src="/public/mockups/4.png" width="200"/><br><b>Expense Tracking</b></td>
+    </tr>
+    <!-- Row 2 -->
+    <tr>
+      <td align="center"><img src="/public/mockups/5.png" width="200"/><br><b>Budget Overview</b></td>
+      <td align="center"><img src="/public/mockups/6.png" width="200"/><br><b>Reports</b></td>
+      <td align="center"><img src="/public/mockups/7.png" width="200"/><br><b>Categories</b></td>
+    </tr>
+    <!-- Row 3 (single centered image) -->
+    <tr>
+      <td colspan="3" align="center"><img src="/public/mockups/8.png" width="200"/><br><b>Settings</b></td>
+    </tr>
+  </table>
+</div>
 
 **Live Demo**: [spendwise](https://spend-wise-blue.vercel.app/) 
 **Android APK**: [Download link coming soon](#) 
