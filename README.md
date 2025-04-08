@@ -1,4 +1,4 @@
-```
+
 # 💰 SpendWise - Personal Budget Tracker
 
 A **cross-platform personal finance app** built with React, Capacitor, and Firebase to help users track expenses, manage budgets, and visualize spending habits.
