@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">spendwise</string>
+    <string name="title_activity_main">spendwise</string>
+    <string name="package_name">com.jude.spendwise</string>
+    <string name="custom_url_scheme">com.jude.spendwise</string>
+</resources>
