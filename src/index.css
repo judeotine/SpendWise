@@ -1,0 +1,233 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 142 71% 45%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 142 33% 96%;
+    --secondary-foreground: 142 50% 25%;
+
+    --muted: 142 20% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 40% 96.1%;
+    --accent-foreground: 142 50% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 71% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 142 71% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 142 20% 95.9%;
+    --sidebar-accent-foreground: 142 50% 25%;
+    --sidebar-border: 142 13% 91%;
+    --sidebar-ring: 142 71% 45%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 142 71% 45%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 142 30% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 142 30% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 30% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 142 30% 20%;
+    --input: 142 30% 20%;
+    --ring: 142 71% 45%;
+    
+    --sidebar-background: 142 30% 10%;
+    --sidebar-foreground: 142 20% 95.9%;
+    --sidebar-primary: 142 71% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 25% 15.9%;
+    --sidebar-accent-foreground: 142 20% 95.9%;
+    --sidebar-border: 142 25% 15.9%;
+    --sidebar-ring: 142 71% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Add custom green tinted scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+  
+  /* Custom animation classes */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Style improvements */
+  .card-shadow {
+    @apply shadow-lg shadow-primary/5;
+  }
+  
+  /* Enhanced glass effect with border radius */
+  .glass-effect {
+    @apply bg-white/70 dark:bg-slate-900/80 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-xl;
+  }
+
+  /* Green gradient backgrounds */
+  .green-gradient {
+    @apply bg-gradient-to-br from-primary/90 to-primary/70;
+  }
+  
+  .green-surface {
+    @apply bg-gradient-to-br from-secondary/80 to-secondary/40;
+  }
+
+  /* Card styles */
+  .feature-card {
+    @apply p-5 rounded-2xl border border-border/30 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  /* 3D effects */
+  .card-3d {
+    @apply transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
+    transform-style: preserve-3d;
+  }
+  
+  .btn-3d {
+    @apply shadow-lg hover:shadow-xl active:translate-y-1 transform transition-all duration-150;
+  }
+  
+  /* Enhanced glassmorphism */
+  .glassmorphism {
+    @apply bg-white/10 dark:bg-black/20 backdrop-blur-lg border border-white/20 dark:border-white/10 rounded-xl shadow-lg;
+  }
+
+  .neo-blur {
+    @apply backdrop-blur-xl bg-white/10 dark:bg-black/30 border border-white/10 dark:border-white/5 shadow-lg rounded-xl;
+  }
+
+  /* New glassmorphism styles with gradients */
+  .glass-card {
+    @apply backdrop-blur-lg bg-gradient-to-br from-white/20 to-white/5 dark:from-black/20 dark:to-black/5 border border-white/20 dark:border-white/10 rounded-xl shadow-lg;
+  }
+
+  .glass-button {
+    @apply backdrop-blur-md bg-white/10 dark:bg-white/5 hover:bg-white/20 dark:hover:bg-white/10 border border-white/20 dark:border-white/10 rounded-xl shadow-md transition-all duration-200;
+  }
+
+  .glass-input {
+    @apply backdrop-blur-md bg-white/5 dark:bg-black/5 border border-white/20 dark:border-white/10 rounded-xl focus:ring-2 focus:ring-primary/50 focus:border-primary/50;
+  }
+  
+  /* Card with gradient */
+  .gradient-card {
+    @apply bg-gradient-to-br from-primary/10 to-transparent backdrop-blur-sm border border-white/20 rounded-xl shadow-lg;
+  }
+}
+
+/* 3D animation effects */
+.animate-3d {
+  animation: rotate3d 15s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotate3d {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+/* Pulse animation for interactive elements */
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* Glassmorphism styles for dropdowns/menus */
+.radix-dropdown-content, 
+.radix-popover-content,
+.radix-select-content {
+  @apply backdrop-blur-lg bg-white/10 dark:bg-black/30 border border-white/20 dark:border-white/10 !important;
+}
